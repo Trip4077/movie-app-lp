@@ -191,6 +191,33 @@ html {
   text-shadow: 0 0 4px #000, 0 0 6px #000, 0 0 8px #000, 0 0 10px #000;
 }
 /*
+-------------- Header Styles 1st Breakpoint --------------
+*/
+@media (max-width: 1018px) {
+  .header-bg a {
+    font-size: 2.8rem;
+    text-align: center;
+    width: 50%;
+    padding: 5px 30px;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-text {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/*
+-------------- Header Styles 1st Breakpoint --------------
+*/
+@media (max-width: 568px) {
+  .header-bg a {
+    font-size: 2.4rem;
+  }
+}
+/*
 -------------- Tiles Styles --------------
 */
 .tile-container {
@@ -232,13 +259,33 @@ html {
   width: 150px;
 }
 /*
--------------- Feautres Styles --------------
+-------------- Tiles Styles 2nd Breakpoint--------------
+*/
+@media (max-width: 902px) {
+  .tile-container {
+    flex-direction: column;
+  }
+  .tile-container .tile {
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+/*
+-------------- Tiles Styles 4th Breakpoint --------------
+*/
+@media (max-width: 568px) {
+  .tile-container .tile {
+    width: 75%;
+  }
+}
+/*
+-------------- Banner Styles --------------
 */
 .banner img {
   width: 100%;
 }
 /*
--------------- Feautres Styles --------------
+-------------- Features Styles --------------
 */
 .features {
   padding: 50px 0;
@@ -267,6 +314,24 @@ html {
   flex-direction: row-reverse;
 }
 /*
+-------------- Features Styles 3rd Breakpoint --------------
+*/
+@media (max-width: 896px) {
+  .features .features-panel {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .features .features-panel p {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 20px;
+  }
+  .features .features-panel:nth-child(even) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+/*
 -------------- Footer Styles --------------
 */
 footer {
@@ -287,4 +352,23 @@ footer div {
 }
 footer div span {
   font-weight: bold;
+}
+/*
+-------------- Footer Styles 2nd Breakpoint --------------
+*/
+@media (max-width: 902px) {
+  footer {
+    height: auto;
+  }
+}
+/*
+-------------- Footer Styles 4th Breakpoint --------------
+*/
+@media (max-width: 568px) {
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    margin-top: 75px;
+  }
 }
