@@ -210,7 +210,7 @@ html {
   }
 }
 /*
--------------- Header Styles 1st Breakpoint --------------
+-------------- Header Styles 3rd Breakpoint --------------
 */
 @media (max-width: 568px) {
   .header-bg a {
@@ -310,8 +310,38 @@ html {
   font-size: 2.8rem;
   width: 50%;
 }
-.features .features-panel:nth-child(even) {
+.features .features-panel:nth-child(3) {
   flex-direction: row-reverse;
+}
+.features .features-link {
+  width: 30%;
+  height: 60px;
+  margin: 70px auto;
+  background-color: #ffc107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  letter-spacing: 8px;
+  font-size: 4.2rem;
+  color: #00008B;
+  transition: 0.3s height, 0.3s width;
+}
+.features .features-link:hover {
+  height: 75px;
+  width: 33%;
+}
+/*
+-------------- Feautres Styles 1st Breakpoint --------------
+*/
+@media (max-width: 1018px) {
+  .features .features-link {
+    font-size: 2.8rem;
+    width: 55%;
+  }
+  .features .features-link:hover {
+    width: 57%;
+  }
 }
 /*
 -------------- Features Styles 3rd Breakpoint --------------
@@ -326,7 +356,7 @@ html {
     font-size: 2.2rem;
     margin-top: 20px;
   }
-  .features .features-panel:nth-child(even) {
+  .features .features-panel:nth-child(3) {
     flex-direction: column;
     margin: 0 auto;
   }

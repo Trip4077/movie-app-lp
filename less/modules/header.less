@@ -1,0 +1,126 @@
+
+/*
+-------------- Header Styles --------------
+*/
+
+.header-bg {  
+    position: relative;
+
+    background-image: url('../images/header-bg.png');
+    background-color: #cccccc; 
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    a {
+        border: 3px solid #067BC2;
+        border-radius: 50px;
+        background-color: rgba(6, 123, 194, 0.4);
+
+        font-size: 4rem;
+        color: white;
+
+        text-decoration: none;
+        text-shadow: 0 0 4px #000, 
+                        0 0 6px #000; 
+
+        padding: 10px 60px;
+
+        position: absolute;
+        bottom: 120px;;
+        right: 20%;
+
+        transition: 500ms background-color,
+                    510ms text-shadow;
+        &:hover {
+            background-color: #ffc107;
+
+            text-shadow: 0 0 4px #000, 
+                            0 0 6px #000, 
+                            0 0 8px #000, 
+                            0 0 10px #000;
+        }
+    }
+}
+
+.header-text {
+    border: 3px solid #067BC2;
+    background-color: rgba(6, 123, 194, 0.4);
+    color: white;
+
+    height: 450px;
+    width: 375px;
+    padding: 40px 20px;
+
+    position: absolute;
+    top: 125px;
+    left: 13%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    -webkit-box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px 9px rgba(0, 0, 0, 0.75);
+
+    h1 {
+        font-size: 8.4rem;
+        letter-spacing: 10px;
+
+        text-shadow: 0 0 4px #000, 
+                        0 0 6px #000, 
+                        0 0 8px #000, 
+                        0 0 10px #000;
+    }
+
+    h2 {
+        font-size: 6.2rem;
+        letter-spacing: 4px;
+
+        text-align: center;
+        text-shadow: 0 0 4px #000, 
+                        0 0 6px #000, 
+                        0 0 8px #000, 
+                        0 0 10px #000;
+    }
+}
+
+/*
+-------------- Header Styles 1st Breakpoint --------------
+*/
+@media(max-width: 1018px) {
+    
+    .header-bg {  
+        a {
+            font-size: 2.8rem;
+            text-align: center;
+
+            width: 50%;
+            padding: 5px 30px;
+
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .header-text {
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+}
+
+/*
+-------------- Header Styles 3rd Breakpoint --------------
+*/
+@media(max-width: 568px) {
+    
+    .header-bg {  
+        a {
+            font-size: 2.4rem;
+        }
+    }
+}

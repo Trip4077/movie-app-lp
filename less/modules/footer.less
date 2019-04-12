@@ -1,0 +1,51 @@
+/*
+-------------- Footer Styles --------------
+*/
+footer {
+    background-color: #ffc107;
+    border-top: 6px solid #ffa000;  
+
+    height: 300px;
+    width: 100%;
+    margin-top: 75px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 30px;
+
+        width: 35%;
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+/*
+-------------- Footer Styles 2nd Breakpoint --------------
+*/
+
+@media(max-width: 902px) {
+    footer {
+        height: auto;
+    }
+}
+
+/*
+-------------- Footer Styles 4th Breakpoint --------------
+*/
+
+@media(max-width: 568px) {
+    footer {
+        flex-direction: column;
+
+        div {
+            margin-top: 75px;
+        }
+    }
+}
