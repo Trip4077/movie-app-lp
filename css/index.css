@@ -132,6 +132,9 @@ table {
 html {
   font-size: 62.5%;
 }
+html a {
+  cursor: pointer;
+}
 /*
 -------------- Header Styles --------------
 */
